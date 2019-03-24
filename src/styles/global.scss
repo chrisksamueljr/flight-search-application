@@ -1,0 +1,324 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * din-web-jetblue:
+ *   - http://typekit.com/eulas/000000000000000000011b28
+ *   - http://typekit.com/eulas/000000000000000000011b2a
+ *   - http://typekit.com/eulas/000000000000000000011b2c
+ *   - http://typekit.com/eulas/000000000000000000011b2e
+ *   - http://typekit.com/eulas/000000000000000000011b2f
+ *
+ * © 2009-2017 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/******************Do not uncomment. Use Typekit block below as reference only. Already being referenced from fonts.jetblue.com/sfh4pzq.js********************/
+/*if (!window.Typekit)
+    window.Typekit = {};
+window.Typekit.config = {
+    "a": "514496",
+    "c": [".tk-din-web-jetblue", "\"din-web-jetblue\",\"Arial\",\"Helvetica\",sans-serif"],
+    "fi": [14331, 14333, 14335, 14337, 14338],
+    "fc": [{
+        "id": 14331,
+        "family": "din-web-jetblue",
+        "src": "{scheme}://fonts.jetblue.com/k/4e92bfc61e67c14f6c85aad17bacc7337fef51c6-{format}.{extension}",
+        "descriptors": {
+            "weight": "400",
+            "style": "normal",
+            "subset_id": 1
+        }
+    }, {
+        "id": 14333,
+        "family": "din-web-jetblue",
+        "src": "{scheme}://fonts.jetblue.com/k/77b3bf8b39ec706f12bb8b34da8ec33945750bde-{format}.{extension}",
+        "descriptors": {
+            "weight": "700",
+            "style": "normal",
+            "subset_id": 1
+        }
+    }, {
+        "id": 14335,
+        "family": "din-web-jetblue",
+        "src": "{scheme}://fonts.jetblue.com/k/c640bd26e6857e0f83f75253ab4febe3eb4d1b7d-{format}.{extension}",
+        "descriptors": {
+            "weight": "300",
+            "style": "normal",
+            "subset_id": 1
+        }
+    }, {
+        "id": 14337,
+        "family": "din-web-jetblue",
+        "src": "{scheme}://fonts.jetblue.com/k/bfb83a1bd9fd790265ed3aa5bcc5c508c06c9d4c-{format}.{extension}",
+        "descriptors": {
+            "weight": "500",
+            "style": "normal",
+            "subset_id": 1
+        }
+    }, {
+        "id": 14338,
+        "family": "din-web-jetblue",
+        "src": "{scheme}://fonts.jetblue.com/k/6a3a4bdcf98baa8409a25f94f4cdf8778a1a60ff-{format}.{extension}",
+        "descriptors": {
+            "weight": "900",
+            "style": "normal",
+            "subset_id": 1
+        }
+    }],
+    "fn": ["din-web-jetblue", ["n3", "n4", "n5", "n7", "n9"]],
+    "hn": "fonts.jetblue.com",
+    "ht": "sh",
+    "js": "1.18.18",
+    "kt": "sfh4pzq",
+    "l": "typekit",
+    "p": "p.typekit.net",
+    "ps": 2,
+    "type": "configurable"
+};*/
+
+html,
+body {
+  width: 100%;
+  background-color: rgb(237, 243, 245);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+:host be-app {
+  font-size: var(--f4);
+}
+
+.jetblue-logo {
+  height: 4em;
+}
+
+.jbloader {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+
+    transform: rotate(359deg);
+  }
+}
+
+.spinner-icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #004990;
+  flex-direction: column;
+}
+
+.displayNone {
+  display: none;
+}
+
+/* BreadCrumb */
+.breadcrumb-item.active {
+  color: #004990;
+  font-weight: bold;
+}
+
+/* Form Elements */
+input,
+:host > > > input {
+  color: #888;
+  font-family: Arial;
+  font-size: var(--f4);
+}
+
+input[text],
+:host > > > input[text] {
+  color: #888;
+  font-family: Arial;
+  font-size: var(--f4);
+}
+
+label,
+:host > > > label {
+  font-family: Arial;
+  font-size: var(--f4);
+  color: #454545; /* needs proper grey */
+}
+
+;
+
+:host > > > input[type=text]:focus,
+input[type=text]:focus,
+textarea:focus,
+.ui-inputtext:focus,
+p-dropdown:focus > .ui-dropdown,
+p-autocomplete:focus > .ui-autocomplete > .ui-inputtext,
+p-calendar:focus > .ui-inputtext,
+p-inputmask:focus > .ui-inputtext,
+p-checkbox:focus .ui-chkbox-box,
+p-radiobutton:focus .ui-radiobutton-box,
+p-inputswitch:focus .ui-inputswitch,
+p-listbox:focus .ui-inputtext,
+p-multiselect:focus > .ui-multiselect,
+p-spinner:focus > .ui-inputtext,
+p-selectbutton:focus .ui-button,
+p-togglebutton:focus .ui-button {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+.form-control label,
+.form-control .errorLabel,
+:host > > > .form-control label,
+:host > > > .form-control .errorLabel {
+  font-family: Arial;
+  font-size: var(--f4);
+  color: #454545; /* needs proper grey */
+}
+
+.btnContainer,
+:host > > > .btnContainer {
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.continuebtn,
+:host > > > .continuebtn {
+	width: 100%;
+	background-color: #f90; /* orange needs to be replaced with ACAA */
+	font-family: 'din-web-jetblue';
+	font-weight: 900;
+	font-size: var(--f2);
+	color: #fff;
+}
+
+a,
+:host > > > a {
+  cursor: pointer;
+  cursor: hand;
+}
+
+button,
+:host > > > button {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  cursor: hand;
+  color: #888;
+}
+
+button:hover,
+:host > > > button {
+  background-color: #cfd8dc;
+}
+
+button:disabled,
+:host > > > button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+:host > > > .form-control label,
+.form-control label,
+.form-control .errorLabel {
+  font-family: Arial;
+  font-size: var(--f4);
+  color: #454545;
+}
+
+:host > > > .errorColor,
+.errorColor,
+:host > > > .errorLabel,
+.errorLabel {
+  color: var(--red);
+  font-size: var(--f4);
+}
+
+:host > > > .required label:not(.errorColor)::after,
+.required label:not(.errorColor)::after {
+  content: '* ';
+  color: #f90;
+}
+
+:host > > > .required span.errorLabel::after,
+.required span.errorLabel::after {
+  content: '* ';
+  color: var(--red);
+}
+
+.required.invalid .radio-control label {
+  color: var(--red);
+}
+
+.valid .radio-control .errorLabel {
+  display: none;
+}
+
+.md-button-wrapper .material-icons {
+  vertical-align: middle;
+}
+
+.navbar-brand {
+  margin: 0 auto;
+}
+
+.navbar-brand a img {
+  height: 35px;
+  border: 0;
+}
+
+.navbar-toggle,
+.navbar-toggle:hover {
+  background: none;
+  color: white;
+  /* Removing margin-right cause I don't know why its needed... */
+  /* margin-right: -35px; */
+  border: 0;
+}
+
+md-sidenav-container > md-sidenav {
+  width: 100%;
+}
+
+md-sidenav-container {
+  height: 100%;
+}
+
+.md-sidenav-content md-toolbar {
+  padding: 0 5px;
+  background: var(--core-blue);
+}
+
+/* For md-dialog to cover entire width
+ * Use width: 100vw height: 100vh in the dialogs
+ */
+
+.md-dialog-container {
+  max-width: 100vw !important;
+}
+
+/* :host >>> .md-sidenav-container { position: fixed; } */
+/* stylelint-disable property-no-vendor-prefix */
+svg[type=button] {
+  -webkit-appearance: none;
+}
+
+/* stylelint-enable */

@@ -1,0 +1,72 @@
+<!-- <form novalidate [formGroup]="codeShareSearchForm" (ngSubmit)="submitForm(codeShareSearchForm.value)"> -->
+  <form>
+    <div class="col-sm-10 input-group">
+        <div class="input-group input-group-lg">
+          <div class="jetblue-input-container">
+         <input type="text" placeholder="Code Share Airline">
+            <!-- <input type="text" placeholder="Code Share Airline" [(ngModel)]="codeShareAirline" formControlName="CodeShareAirline" -->
+              <!-- matInput [matAutocomplete]="codeShareAutoComplete"> -->
+            <!-- <mat-error *ngIf="(codeShareSearchForm.controls.CodeShareAirline.invalid)">
+                Only <strong>2 character</strong> codes accepted. Ex. EL for Aer Lingus
+            </mat-error> -->
+          <!-- </container> -->
+          </div>
+          <mat-option>
+  
+          </mat-option>
+          <!-- <mat-autocomplete #codeShareAutoComplete> -->
+            <!-- <mat-option *ngFor="let option of filteredCodeShareAirline | async" [value]="option.AirlineCode.trim()"> -->
+              <!-- <span style="float: left">{{ option.AirlineName }}</span> <span style="float: right">  {{ option.AirlineCode }}</span> -->
+            <!-- </mat-option> -->
+          <!-- </mat-autocomplete> -->
+          <br>
+        </div>
+      </div>
+      <div class="col-sm-10 input-group jb-bottom-padded ">
+        <div class="input-group input-group-lg top2" >
+          <div class="jetblue-input-container">
+              <input type="text" placeholder="CodeShare Flight Number">
+            <!-- <input type="text" placeholder="CodeShare Flight Number" [(ngModel)]="codeShareFlight" formControlName="CodeShareFlight"
+              matInput> -->
+            <!-- <mat-error *ngIf="(codeShareSearchForm.controls.CodeShareFlight.invalid)">
+                Only <strong>numbers</strong> up to 4 digits allowed
+            </mat-error> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-10 input-group jb-bottom-padded">
+        <div class="input-group input-group-lg top2">
+          <div class="jetblue-input-container">
+              <input type="text" placeholder="Choose a date">
+          </div>
+          <!-- <mat-input-container>
+          <input matInput [matDatepicker]="date"
+                   placeholder="Choose a date"
+                   formControlName="Date"
+                   [min]="minDate" [max]="maxDate"
+                   [(ngModel)]="datepicker" (focus)="getTodaysDateIfNull()">
+                   <mat-datepicker-toggle matSuffix [for]="date"></mat-datepicker-toggle>
+                   <mat-datepicker #date></mat-datepicker>
+            </mat-input-container> -->
+          <!-- <mat-datepicker #date></mat-datepicker> -->
+        </div>
+      </div>
+      <div>
+      <br>
+      <br>
+      <div class="col-sm-10 input-group jb-bottom-padded">
+        <div class="input-group input-group-lg top2">
+          <mat-checkbox class="example-margin"> Display All Times in Zulu</mat-checkbox>
+        <!-- <mat-checkbox class="example-margin" formControlName="ShowZuluTime" [(ngModel)]="zuluTime">Display all times in ZULU (UTC)</mat-checkbox> -->
+        </div>
+      </div>
+      <div class="form-group">
+          <button  type="submit" class="btn search-btn btn-mat btn-block find-it orange-button">
+        <!-- <button mat-raised-button type="submit" [disabled]="!codeShareSearchForm.valid" class="btn search-btn btn-mat btn-block find-it orange-button" (click)="toggleAnimation()"> -->
+          <!-- {{config.labels.submit}} -->
+          Submit
+        </button>
+      </div>
+    </div>
+  </form>
+  

@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+@import './animate.css';
+@import './jb.css';
+@import './global.css';
+@import './variables.css';
+@import './utils.css';
+@import './styles.scss';
+
+
+/* Override Material Dialog styles */
+.mat-dialog-container {
+  overflow: initial !important;
+}
+
+:host /deep/ md-dialog-container .mat-dialog-container {
+  overflow: initial !important;
+}

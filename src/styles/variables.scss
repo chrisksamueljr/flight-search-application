@@ -1,0 +1,50 @@
+:root {
+    --f1: 2.4rem;
+    --f2: 2rem;
+    --f3: 1.5rem;
+    --f4: 1.25rem;
+    --f5: 1rem;
+    --f6: 0.875rem;
+    --f-headline: 5rem;
+    --f-subheadline: 3rem;
+  
+    --core-blue: #004990;
+    --pure-white: #fff;
+    --slate: #353535;
+    --action-blue: #306faa;
+    --soft-blue: #f1f5f8;
+    --orange: #fe9500;
+    --deep-blue: #00245d;
+    --green: #3a7728;
+    --mint-green: #66cc66;
+    --black: #4c4c4c; /* equivalent to rgba(0,0,0,0.7) against white */
+    --red: #cc0000;
+    --gray: #9E9E9E; /* equivalent to rgba(0,0,0,0.38) against white */
+  
+    /* JB Typefaces */
+  
+    /* essential typefaces */
+    --display-copy-typeface: din-web-jetblue, Arial, Helvetica, sans-serif;
+    --body-copy-typeface: Arial, Helvetica, sans-serif;
+  
+    /* primary combinations
+    for most situations, these will be the most appropriate */
+  
+    --jb-primary-foreground: var(--black);
+    --jb-primary-background: var(--action-blue);
+  
+    /* focal combinations
+    these should be reserved for high-level calls to action
+    ex: "find flights" or "book now" */
+  
+    --jb-focal-foreground: var(--black);
+    --jb-focal-background: var(--core-blue);
+    --jb-focal-accent: var(--orange);
+  
+    /* tertiary combinations
+    for alternating copy and links on text-heavy pages */
+  
+    --jb-tertiary-foreground: var(--slate);
+    --jb-tertiary-background: var(--soft-blue);
+  }
+  

@@ -1,0 +1,130 @@
+@import './variables.css';
+
+/*
+  JetBlue WCAG-accessible color palette
+  adapted from JETBLUE.COM ACCESSIBILITY STYLE GUIDE V1.0, October 2015
+  essential colors -- whenever possible, reference functional
+  color groups below
+*/
+
+/*
+  this is how a typical headline should render
+  display copy should render as 16px+ in browser
+*/
+
+.jb-display-style {
+  font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+  color: #004990;
+  font-weight: 700;
+}
+
+.jb-copy-style {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4c4c4c;
+  font-weight: 400;
+}
+
+/* standard background for application headings */
+.app-gradient-background {
+  background: #004990;
+  background: linear-gradient(to bottom, #004990 0%, #00245d 100%);
+}
+
+/*
+  JB Modules
+  These provide theme classes that can be used for mixins to modules */
+
+.jb-module {
+  background: #fff;
+  color: #4c4c4c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.jb-module h2,
+.jb-module h3,
+.jb-module h4,
+.jb-module h5,
+.jb-module h5 {
+  font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+  color: #004990;
+  font-weight: 700;
+}
+
+.jb-module.alt-dark {
+  background: #004990;
+}
+
+.jb-module.alt-dark h2,
+.jb-module.alt-dark h3,
+.jb-module.alt-dark h4,
+.jb-module.alt-dark h5,
+.jb-module.alt-dark h5 {
+  color: #fff;
+}
+
+.jb-app-header {
+  background: #004990;
+  background: linear-gradient(to bottom, #004990 0%, #00245d 100%);
+  color: #fff;
+}
+
+/* The blue jetblue button */
+.primary-jb-btn {
+  background-color: #306faa;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+/ / padding: 10 px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+  font-size: var(--f4);
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.primary-jb-btn:hover {
+  text-decoration: none;
+}
+
+.primary-jb-btn:hover,
+.primary-jb-btn:focus {
+  background-color: #004990;
+  color: white;
+}
+
+.primary-jb-btn:focus {
+  outline: #4D90CD solid 2px;
+  border-radius: 0;
+}
+
+/* Orange button */
+.secondary-jb-btn {
+  background-color: #f90;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+/ / padding: 10 px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: din-web-jetblue, Arial, Helvetica, sans-serif;
+  font-size: var(--f4);
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.secondary-jb-btn:hover {
+  text-decoration: none;
+}
+
+.secondary-jb-btn:hover,
+.secondary-jb-btn:focus {
+  background-color: #ff7300;
+  color: white;
+}
+
+.secondary-jb-btn:focus {
+  outline: #4D90CD solid 2px;
+  border-radius: 0;
+}
