@@ -1,3 +1,25 @@
-<p>
-  flight-detail works!
-</p>
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened> 
+      <flight-info-bar></flight-info-bar>
+    </mat-drawer>
+    <div class="row blue-eye-tabs normal-tab-text">
+        <nav md-tab-nav-bar class="full-height">
+          <a class="col-md-3 blue-eye-tab">
+            <i class="fa fa-plane" aria-hidden="true"></i>
+            <span class="hidden-md-down">On Board</span>
+          </a>
+          <a class="col-md-3 blue-eye-tab">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            <span class="hidden-md-down">Details & History</span>
+          </a>
+          <a class="col-md-3 blue-eye-tab">
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <span class="hidden-md-down">Reporting</span>
+          </a>
+          <a class="col-md-3 blue-eye-tab">
+            <i class="fa fa-map" aria-hidden="true"></i>
+            <span class="hidden-md-down">Map</span>
+          </a>
+          </nav>
+          </div>
+</mat-drawer-container> 

@@ -1,0 +1,89 @@
+
+<button style="height: 0; position: absolute; z-index: -999"></button>
+<div class="flight-detail-sidebar">
+  <!-- <div *ngIf="!hasFlightDetailsError"> -->
+  <div>
+    <!-- <div class="breadcrumb-div" *ngIf="showGoBackProp" (click)="goBack()"> -->
+    <div class="breadcrumb-div">
+      <p class="breadcrumb-title">
+        <!-- <i class="back-to-results fa fa-arrow-left"></i>Back to ( backToMessage ) Flights -->
+        <i class="back-to-results fa fa-arrow-left"></i> Back to [ backToMessage ] Flights
+      </p>
+    </div>
+    </div>
+    </div>
+    <div class="flight-status-div">
+      <span class="flight-detail-error" >
+        <!-- TODO: Create error-message -->
+        <!-- <error-message></error-message> -->
+      </span>
+
+      <div class="flight-status-number">100 121</div>
+      <div class="flight-status-details"> October 12 2018 &nbsp;&nbsp;&nbsp; pre-flight</div>
+    </div>
+
+
+    <!--Side Nav City Pair Component-->
+    <side-nav-city-pair></side-nav-city-pair>
+
+    <!--Side Nav City Time Component-->
+    <side-nav-aircraft-time></side-nav-aircraft-time>
+
+    <!-- Schedule Duration -->
+    <div class="scheduled-duration-div">
+
+        <div class="scheduled-duration-text">Scheduled Duration: [schDuration]</div>
+  
+        <img class="down-arrow" src="../../assets/Polygon.png">
+      </div>
+
+      <!--Aircraft OOOI Time  -->
+      <div class="aircraft-OOOI-time-div">
+          <div class="depature-details-div">
+            <table class="aircraft-time-table">
+              <tr>
+                <td class="bottom-border"><span class="align-data-left"> Departure Gate: </span><span class="align-data">(depGate)</span>
+                </td>
+              </tr>
+              <tr>
+    
+                <td class="bottom-border"><span class="align-data-left"> EDCT: </span> <span class="align-data">(EDCT)</span></td>
+              </tr>
+              <tr>
+                <td class="bottom-border"><span class="align-data-left">  Out: </span> <span class="align-data">(OutTime)</span></td>
+              </tr>
+              <tr>
+                <td class="bottom-border"><span class="align-data-left">On: </span> <span class="align-data">(OnTime)</span></td>
+              </tr>
+              <tr>
+                <td class="bottom-border" mdTooltip="delayCodes">
+                  <span class="align-data-left">Depature Delay:</span> <span class="align-data">(depDelayCount)</span></td>
+                </tr>
+            </table>
+          </div>
+          <div id="arrival-id" class="arrival-details-div">
+            <table class="aircraft-time-table aircraft-time-table-middle-border">
+              <tr>
+                <td class="bottom-border"><span class="align-data-left"> Arrival Date: </span><span class="align-data">(ATADate)</span></td>
+              </tr>
+              <tr>
+                <td class="bottom-border">
+                </td>
+              </tr>
+              <tr>
+                <td class="bottom-border"><span class="align-data-left">  Off: </span> <span class="align-data">(OffDate)  (OffTime)</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="bottom-border"><span class="align-data-left">In: </span> <span class="align-data">(InDate) - (InTime)</span>
+                </td>
+              </tr>
+              <tr>
+                <!-- <td class="bottom-border" mdTooltip="Sample AirCodes"> -->
+                <td class="bottom-border" mdTooltip="Sample AirCodes">
+                  <span class="align-data-left">Arrival Delay:</span> 
+                  <span class="align-data">(arrDelayCount)</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>

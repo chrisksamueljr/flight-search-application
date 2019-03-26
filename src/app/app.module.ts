@@ -7,7 +7,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 
 import { RouterModule, Routes } from '@angular/router';
-import {AppRoutingModule} from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 import { AppComponent } from './app.component';
@@ -18,6 +18,9 @@ import { SearchResultComponent } from './search-result/search-result.component';
 import { DateDropdownComponent } from './date-dropdown/date-dropdown.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import { FlightDetailComponent } from './flight-detail/flight-detail.component';
+import { FlightInfoBarComponent } from './flight-info-bar/flight-info-bar.component';
+import { SideNavCityPairComponent } from './side-nav-city-pair/side-nav-city-pair.component';
+import { SideNavAircraftTimeComponent } from './side-nav-aircraft-time/side-nav-aircraft-time.component';
 
 // Create list of module to break out later
 const MATERIAL_MODULES = [
@@ -56,6 +59,8 @@ const appRoutes: Routes = [
 
 
 
+
+
 @NgModule({
   declarations: [
     
@@ -66,7 +71,10 @@ const appRoutes: Routes = [
     SearchResultComponent,
     DateDropdownComponent,
     FlightDetailComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FlightInfoBarComponent,
+    SideNavCityPairComponent,
+    SideNavAircraftTimeComponent
   ],
   imports: [
     RouterModule.forRoot(

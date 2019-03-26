@@ -1,0 +1,508 @@
+.flight-detail-bg {
+    background-color: rgb(237, 243, 245);
+  }
+  
+  .back-to-results {
+    fill: #fff;
+    position: absolute;
+    cursor: pointer;
+    left: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .flight-detail-sidebar {
+    background-color: #fff;
+    z-index: 2;
+    left: 15px;
+    padding-top: 0;
+    overflow-x: hidden;
+  }
+  
+  .flight-detail-error {
+    float: right;
+  }
+  
+  .sidebar-outer {
+    position: relative;
+  }
+  
+  @media (min-width: 992px) {
+    .sidebar-outer-width {
+      width: 325px;
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .blue-eye-tab {
+      width: 20%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .sidebar {
+      position: fixed;
+      left: 0;
+    }
+  }
+  
+  .flight-detail-content-container {
+    /* padding-left: 350px; */
+  }
+  
+  .breadcrumb-div {
+    background-color: rgb(0, 40, 94);
+    width: 100%;
+    color: #fff;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .breadcrumb-title {
+    position: absolute;
+    font-size: 12px;
+    font-family: 'Arial';
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+    transform: matrix(1, 0, 0, 1.0024478443657, 0, 0);
+    bottom: -7px;
+    width: 100%;
+  }
+  
+  
+   /**
+    * Change color of flight status 
+    * Based on the ngClass returned value from checkFlightDepartureStatus(value: string) function
+    */
+  
+  .flight-status-div {
+    background-color: #00245D;
+    width: 100%;
+    height: 52px;
+    position: relative;
+  }
+  
+  .ontime{
+    background-color: #00245D;
+  }
+  
+  .delayed{
+    background-color: #A75B00;
+  }
+  
+  
+  .closing, .closed{
+    background-color: #A50708;
+  }
+  
+  .boarding-group{
+    background-color: rgb(58, 119, 40);
+  }
+  
+  .cancelled{
+    background-color: #A8AC00;
+  }
+  
+  .col-md-3.col-lg-3.col-xl-3.sidebar-outer.sidebar-outer-width {
+    padding: 0 0;
+  }
+  
+  .flight-status-number {
+    font-size: 20px;
+    font-family: 'din-web-jetblue';
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-align: center;
+    position: absolute;
+    left: 131px;
+    bottom: 23px;
+  }
+  
+  .flight-status-details {
+    font-size: 11px;
+    font-family: 'din-web-jetblue';
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-align: center;
+    position: absolute;
+    left: 99px;
+    bottom: 7px;
+  }
+  
+  .city-pair-div {
+    height: 92px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgb(217, 217, 217);
+  }
+  
+  .origin-div {
+    color: rgb(0, 73, 144);
+    position: absolute;
+    text-align: left;
+    font-size: 12px;
+    left: 28px;
+  }
+  
+  .origin-city {
+    font-size: 12px;
+    font-family: 'din-web-jetblue';
+    font-weight: 700;
+    color: rgb(0, 73, 144);
+    position: absolute;
+    left: 30px;
+    top: 14px;
+  }
+  
+  .destination-div {
+    color: rgb(0, 73, 144);
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    font-size: 12px;
+  }
+  
+  .destination-city {
+    font-size: 12px;
+    font-family: 'din-web-jetblue';
+    font-weight: 700;
+    color: rgb(0, 73, 144);
+    position: absolute;
+    right: 30px;
+    top: 14px;
+  }
+  
+  
+  .aircraft-time-div {
+    width: 100%;
+    height: 90px;
+    text-align: center;
+  }
+  
+  .depature-time-div {
+    width: 50%;
+    height: 90px;
+    float: left;
+  }
+  
+  .arrival-time-div {
+    width: 50%;
+    height: 90px;
+    float: left;
+    border-left: 1px solid rgb(217, 217, 217);
+  }
+  
+  .aircraft-time-category {
+    padding-top: 6px;
+    font-size: 12px;
+    /* font-family: "DIN"; */
+    color: rgb(0, 73, 144);
+    font-weight: bold;
+    line-height: 1.667;
+    transform: matrix(1, 0, 0, 1.0024478443657, 0, 0);
+  }
+  
+  .current-time {
+    padding-top: 7px;
+    font-size: 26px;
+    font-family: 'din-web-jetblue';
+    font-weight: 700;
+    color: rgb(0, 73, 144);
+    font-weight: bold;
+    line-height: 0.769;
+    transform: matrix(1, 0, 0, 1.00244784436571, 0, 0);
+  }
+  
+  .scheduled-time {
+    padding-top: 12px;
+    font-size: 12px;
+    font-family: 'din-web-jetblue';
+    font-weight: 700;
+    color: rgb(90, 90, 90);
+    font-weight: bold;
+    line-height: 0.769;
+    transform: matrix(1, 0, 0, 1.00244784436571, 0, 0);
+  }
+  
+  .scheduled-duration-div {
+    border-top: 1px solid rgb(217, 217, 217);
+    text-align: center;
+    color: rgb(90, 90, 90);
+    height: 30px;
+    width: 100%;
+    font-size: 12px;
+    position: relative;
+  }
+  
+  .scheduled-duration-text {
+    font-size: 12px;
+    font-family: 'din-web-jetblue';
+    font-weight: 500;
+    color: rgb(69, 69, 69);
+    line-height: 2;
+    text-align: center;
+    position: absolute;
+    left: 80px;
+    top: 4px;
+  }
+  
+  .down-arrow {
+    position: absolute;
+    bottom: -11px;
+    z-index: 100;
+    left: 47%;
+  }
+  
+  .city-pair-arrow {
+    position: absolute;
+    bottom: 20px;
+    z-index: 100;
+    left: 144px;
+  }
+  
+  .aircraft-OOOI-time-div {
+    width: 100%;
+    height: 155px;
+    text-align: center;
+  }
+  
+  .depature-details-div {
+    width: 50%;
+    height: 90px;
+    float: left;
+  
+    border-radius: 0 17px 0 0;
+  }
+  
+  .arrival-details-div {
+    width: 50%;
+    height: 90px;
+    float: left;
+  
+    border-radius: 17px 0 0 0;
+  }
+  
+  .aircraft-time-table {
+    background: rgb(246, 246, 246);
+    font-size: 9px;
+    font-family: 'Arial';
+    color: rgb(69, 69, 69);
+    font-weight: bold;
+    line-height: 2.182;
+    text-align: left;
+    transform: matrix(1, 0, 0, 1.0024478443657, 0, 0);
+    width: 100%;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    border-top: 1px solid rgb(217, 217, 217);
+  }
+  
+  .aircraft-time-table-middle-border {
+    border-left: 1px solid rgb(217, 217, 217);
+  }
+  
+  .bottom-border {
+    border-bottom: 1px solid rgb(217, 217, 217);
+    height: 30px;
+  }
+  
+  .align-data {
+    float: right;
+    padding-right: 20px;
+  }
+  
+  .align-data-left {
+    padding-left: 20px;
+  }
+  
+  /*
+  #arrival-id:before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      border-top: 80px solid white;
+      border-left: 80px solid red;
+      width: 0;
+  } */
+  
+  .arrival-claim-div {
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(217, 217, 217);
+  }
+  
+  .arrival-claim-label {
+    font-size: 16px;
+    font-family: 'din-web-jetblue';
+    font-weight: 500;
+    color: rgb(48, 111, 170);
+    line-height: 1.5;
+    text-align: left;
+    transform: matrix(1, 0, 0, 1.0024478443657, 0, 0);
+    padding-left: 20px;
+  }
+  
+  .arrival-claim-edit-btn {
+    font-size: 14px;
+    font-family: 'din-web-jetblue';
+    font-weight: 500;
+    color: rgb(48, 111, 170);
+    line-height: 1.714;
+    float: right;
+    transform: matrix(1, 0, 0, 1.0024478443657, 0, 0);
+    cursor: pointer;
+  }
+  
+  .arrival-claim-edit-btn-disabled {
+    cursor: not-allowed;
+    color: gray;
+  }
+  
+  .arrival-claim-p {
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .button-area-div {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+  }
+  
+  .action-button {
+    font-size: 16px;
+    font-family: 'din-web-jetblue';
+    font-weight: 900;
+    color: rgb(48, 111, 170);
+    line-height: 1;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(48, 111, 170);
+    border-radius: 2px;
+    background-color: rgba(255, 152, 0, 0);
+    width: 251px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .action-button-disabled {
+    cursor: not-allowed;
+    color: gray;
+    border-color: gray;
+  }
+  
+  .flight-detail-content-container {
+    /* padding-left: 340px; */
+    /*padding-top: 68px;*/
+  }
+  
+  .main-container {
+    padding-left: 20px;
+    background-color: rgb(237, 243, 245);
+  }
+  
+  /* Tabs CSS */
+  .selected-tab {
+    color: rgb(0, 40, 94) !important;
+  }
+  
+  .normal-tab-text {
+    font-size: 16px;
+    font-family: 'din-web-jetblue';
+    font-weight: 700;
+    color: rgb(48, 111, 170);
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .blue-eye-tabs {
+    position: sticky;
+    height: 72px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(217, 217, 217);
+    z-index: 1;
+    top: 0;
+    margin: 0;
+  }
+  
+  .blue-eye-tabs-small {
+    position: sticky;
+    height: 25px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(217, 217, 217);
+    z-index: 1;
+    top: 0;
+  }
+  
+  .blue-eye-tab-item {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    padding-top: 30px;
+    height: 100%;
+  }
+  
+  .selected-tab::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.3em;
+    vertical-align: middle;
+    content: '';
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-left: 0.3em solid transparent;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    color: rgb(0, 40, 94);
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .flightContent {
+    padding-top: 0;
+    background-color: #fff;
+    padding-bottom: 0;
+    width: 325px;
+    height: 100%;
+    padding-left: 0;
+  }
+  
+  .full-height {
+    height: 100%;
+  }
+  
+  /deep/ .mat-tab-links {
+    height: 100%;
+  }
+  
+  .blue-eye-tab {
+    height: 100%;
+    padding-top: 10px;
+    min-width: 30px;
+    float: left;
+  }
+  
+  .blue-eye-tab:focus, .blue-eye-tab:hover {
+    text-decoration: none;
+  }
+  
+  .blue-eye-tab span {
+      margin-left: 3px;
+  }
+  

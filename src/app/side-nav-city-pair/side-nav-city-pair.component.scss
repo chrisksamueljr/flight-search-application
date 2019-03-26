@@ -1,0 +1,74 @@
+.city-pair-div {
+    height: 92px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgb(217, 217, 217);
+  }
+  
+  .origin-div {
+    color: rgb(0, 73, 144);
+    position: absolute;
+    text-align: left;
+    font-size: 12px;
+    left: 28px;
+  }
+  
+  .origin-city {
+    font-size: 12px;
+    font-family: 'din-web-jetblue';
+    font-weight: 700;
+    color: rgb(0, 73, 144);
+    position: absolute;
+    left: 30px;
+    top: 14px;
+  }
+  
+  .origin-airport-code {
+    font-family: 'din-web-jetblue';
+    font-weight: 900;
+    font-size: 40px;
+    color: rgb(0, 73, 144);
+    text-transform: uppercase;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+  }
+  
+  .destination-div {
+    color: rgb(0, 73, 144);
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    font-size: 12px;
+  }
+  
+  .destination-city {
+    font-size: 12px;
+    font-family: 'din-web-jetblue';
+    font-weight: 700;
+    color: rgb(0, 73, 144);
+    position: absolute;
+    right: 30px;
+    top: 14px;
+  }
+  
+  .destination-airport-code {
+    font-size: 40px;
+    font-family: 'din-web-jetblue';
+    font-weight: 900;
+    color: rgb(0, 73, 144);
+    text-transform: uppercase;
+    text-align: left;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+  }
+  
+  .city-pair-arrow {
+    position: absolute;
+    bottom: 20px;
+    z-index: 100;
+    left: 144px;
+  }
+  
