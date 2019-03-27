@@ -1,0 +1,73 @@
+.aircraft-time-div {
+    width: 100%;
+    height: 90px;
+    text-align: center;
+  }
+  
+  .depature-time-div {
+    width: 50%;
+    height: 90px;
+    float: left;
+  }
+  
+  .arrival-time-div {
+    width: 50%;
+    height: 90px;
+    float: left;
+    border-left: 1px solid rgb(217, 217, 217);
+  }
+  
+  .aircraft-time-category {
+    padding-top: 6px;
+    font-size: 12px;
+    /* font-family: "DIN"; */
+    color: rgb(0, 73, 144);
+    font-weight: bold;
+    line-height: 1.667;
+    transform: matrix(1, 0, 0, 1.0024478443657, 0, 0);
+  }
+  
+  .current-time {
+    padding-top: 7px;
+    font-size: 26px;
+    font-family: 'din-web-jetblue';
+    font-weight: 700;
+    color: rgb(0, 73, 144);
+    font-weight: bold;
+    line-height: 0.769;
+    transform: matrix(1, 0, 0, 1.00244784436571, 0, 0);
+  }
+  
+  .scheduled-time {
+    padding-top: 12px;
+    font-size: 12px;
+    font-family: 'din-web-jetblue';
+    font-weight: 700;
+    color: rgb(90, 90, 90);
+    font-weight: bold;
+    line-height: 0.769;
+    transform: matrix(1, 0, 0, 1.00244784436571, 0, 0);
+  }
+  
+  .scheduled-duration-div {
+    border-top: 1px solid rgb(217, 217, 217);
+    text-align: center;
+    color: rgb(90, 90, 90);
+    height: 30px;
+    width: 100%;
+    font-size: 12px;
+    position: relative;
+  }
+  
+  .scheduled-duration-text {
+    font-size: 12px;
+    font-family: 'din-web-jetblue';
+    font-weight: 500;
+    color: rgb(69, 69, 69);
+    line-height: 2;
+    text-align: center;
+    position: absolute;
+    left: 80px;
+    top: 4px;
+  }
+  
