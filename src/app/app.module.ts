@@ -21,6 +21,8 @@ import { FlightDetailComponent } from './flight-detail/flight-detail.component';
 import { FlightInfoBarComponent } from './flight-info-bar/flight-info-bar.component';
 import { SideNavCityPairComponent } from './side-nav-city-pair/side-nav-city-pair.component';
 import { SideNavAircraftTimeComponent } from './side-nav-aircraft-time/side-nav-aircraft-time.component';
+import { CrewCardComponent } from './flight-detail/crew-card/crew-card.component';
+import { HistoryNavigationComponent } from './flight-detail/history-navigation/history-navigation.component';
 
 // Create list of module to break out later
 const MATERIAL_MODULES = [
@@ -74,7 +76,9 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     FlightInfoBarComponent,
     SideNavCityPairComponent,
-    SideNavAircraftTimeComponent
+    SideNavAircraftTimeComponent,
+    CrewCardComponent,
+    HistoryNavigationComponent
   ],
   imports: [
     RouterModule.forRoot(

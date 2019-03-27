@@ -1,3 +1,21 @@
-<p>
-  history-navigation works!
-</p>
+<div class="pagination-nav">
+    <div [ngClass]="setPreviousClasses()" 
+          (click)="moveTimelineToNewPage(currentDatePageManager.currentPage - 1, 'PREV')"
+         class="col-md-4 active-nav previous-button">
+      <!-- <be-icon class="previous-arrow pagination-icon" height="1.2em" width="1.2em" type="less-then">
+      </be-icon> -->
+      Previous
+    </div>
+    <div class="col-md-4 center position-pagnation">
+      <!-- <ol class="pagination">
+        <li *ngFor="let num of currentDatePageManager.collectionOfPageIds; let i = index"><a [ngClass]="{active: currentDatePageManager.currentPage === i + 1}">1</a></li>
+      </ol> -->
+    </div>
+    <div [ngClass]="setNextClasses()" 
+          (click)="moveTimelineToNewPage(currentDatePageManager.currentPage + 1, 'NEXT')" 
+          class="col-md-4 active-nav next-button ">
+      Next
+      <!-- <be-icon class="next-arrow pagination-icon" height="1.2em" width="1.2em" type="greater-then">
+      </be-icon> -->
+    </div>
+  </div>

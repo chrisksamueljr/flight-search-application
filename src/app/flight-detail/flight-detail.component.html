@@ -21,5 +21,16 @@
             <span class="hidden-md-down">Map</span>
           </a>
           </nav>
-          </div>
+        </div>
+          <div class="history-nav-wrapper">  
+    <!--<be-history-navigation *ngIf="checkIfCurrentTabIsHistoryTab()"></be-history-navigation> -->
+         <history-navigation></history-navigation>
+  </div> 
+  <div class="outer-container">
+    <div class="inner-container">
+      <!-- TODO: Create fuel-stats-bar component -->
+      <!-- <be-fuel-stats-bar *ngIf="checkIfCurrentTabIsHistoryTab()"></be-fuel-stats-bar> -->
+      <!-- <router-outlet></router-outlet> -->
+    </div>
+  </div>
 </mat-drawer-container> 
