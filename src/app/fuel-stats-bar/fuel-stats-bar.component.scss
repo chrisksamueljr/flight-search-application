@@ -1,0 +1,273 @@
+
+.fuel-row {
+    border-color: rgb(222, 222, 222);
+    background-color: rgb(255, 255, 255);
+    height: 6.25rem;
+    position: sticky;
+    top: 72px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .OOOI-text {
+    font-size: 14px;
+    font-family: 'DIN';
+    color: rgb(0, 73, 144);
+    text-align: left;
+  }
+  
+  .info-title {
+    font-size: 12px;
+    font-family: 'DINComp';
+    color: rgb(0, 73, 144);
+    font-weight: bold;
+    line-height: 1.833;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  .on-time-precent {
+    font-size: 22px;
+    font-family: 'DIN';
+    color: rgb(0, 73, 144);
+    font-weight: bold;
+    line-height: 0.909;
+    text-align: left;
+  }
+  
+  .card-columns {
+    column-count: 5;
+  }
+  
+  .padding-left {
+    padding-left: 1px;
+  }
+  
+  .move-left {
+    right: 20px;
+    position: relative;
+  }
+  
+  .white-space {
+    white-space: nowrap;
+  }
+  
+  .content-container {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  
+  .date-underline {
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid rgb(48, 111, 170);
+    color: rgb(48, 111, 170);
+    text-align: left;
+    position: relative;
+    top: 20px;
+  }
+  
+  .date {
+    font-size: 12px;
+    background-color: rgb(237, 243, 245);
+    color: rgb(48, 111, 170);
+    position: relative;
+    top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .timeline-row {
+    padding-top: 50px;
+  }
+  
+  .display-regular {
+    display: block;
+    width: 100%;
+  }
+  
+  .small-screen {
+    display: none;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .date-underline-small {
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid rgb(48, 111, 170);
+    color: rgb(48, 111, 170);
+    text-align: left;
+    position: relative;
+    bottom: 40px;
+    right: 15px;
+  }
+  
+  @media screen
+  and (min-device-width: 374px)
+  and (max-device-width: 1365px)
+  and (orientation: landscape) {
+    .display-regular {
+      display: none;
+    }
+  
+    .center {
+      text-align: center;
+    }
+  
+    .small-screen {
+      display: block;
+    }
+  
+    .header-format {
+      background-color: rgb(0, 73, 144);
+      color: white;
+      font-size: 12px;
+      font-family: 'DINComp';
+      font-weight: bold;
+      line-height: 1.833;
+      text-align: center;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  
+    .info-title {
+      color: white;
+      text-align: center;
+    }
+  
+    .header-format-shared {
+      background-color: rgb(0, 73, 144);
+      color: white;
+      text-align: center;
+    }
+  
+    .on-time-precent {
+      font-size: 22px;
+      font-family: 'DIN';
+      color: rgb(0, 73, 144);
+      font-weight: bold;
+      line-height: 0.909;
+      text-align: center;
+    }
+  
+    .align {
+      text-align: center;
+    }
+  
+    .border-left {
+      border-left: 1px solid black;
+    }
+  
+    .border-right {
+      border-right: 1px solid black;
+    }
+  
+    .pagination-icon {
+      vertical-align: sub;
+    }
+  }
+  
+  @media screen
+  and (min-device-width: 374px)
+  and (max-device-width: 1365px)
+  and (orientation: portrait) {
+    .display-regular {
+      display: none;
+    }
+  
+    .float-left {
+      float: left;
+    }
+  
+    .float-right {
+      float: right;
+    }
+  
+    .center {
+      text-align: center;
+    }
+  
+    .clear {
+      clear: both;
+    }
+  
+    .small-screen {
+      display: block;
+    }
+  
+    .header-format {
+      background-color: rgb(0, 73, 144);
+      color: white;
+      font-size: 12px;
+      font-family: 'DINComp';
+      font-weight: bold;
+      line-height: 1.833;
+      text-align: center;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  
+    .info-title {
+      color: white;
+      text-align: center;
+    }
+  
+    .header-format-shared {
+      background-color: rgb(0, 73, 144);
+      color: white;
+      text-align: center;
+    }
+  
+    .on-time-precent {
+      font-size: 22px;
+      font-family: 'DIN';
+      color: rgb(0, 73, 144);
+      font-weight: bold;
+      line-height: 0.909;
+      text-align: center;
+    }
+  
+    .align {
+      text-align: center;
+    }
+  
+    .border-left {
+      border-left: 1px solid black;
+    }
+  
+    .border-right {
+      border-right: 1px solid black;
+    }
+  
+    .pagination-icon {
+      vertical-align: sub;
+    }
+  
+    .position-pagnation {
+      top: 16%;
+      left: 4%;
+    }
+  
+    .pagination li a {
+      display: block;
+      width: 6px;
+      height: 6px;
+      text-indent: -10000px;
+      background: rgb(201, 201, 202);
+      border-radius: 10px;
+    }
+  
+    .active-nav {
+      font-size: 14px;
+      font-family: 'DIN';
+      color: rgb(48, 111, 170);
+      line-height: 1;
+      top: 35%;
+      transform: matrix(0.99995867939341, 0, 0, 1, 0, 0);
+    }
+  }
+  

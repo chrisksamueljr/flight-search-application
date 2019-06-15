@@ -1,0 +1,68 @@
+*ngIf="(flights$ | async).length" class="row scroll-margin large-screens col-lg-12 col-md-12 col-xl-12">
+<div class="row headers">
+    <div class="col-md-1 border-header">
+        <div class="header-font">Departure</div>
+    </div>
+    <div class="col-md-1 border-header">
+        <div class="header-font">Flight</div>
+    </div>
+    <div class="col-md-5 border-header">
+        <div class="header-font">Route</div>
+    </div>
+    <div class="col-md-1 border-header">
+        <div class="header-font">Aircraft</div>
+    </div>
+    <div class="col-md-1 border-header">
+        <div class="header-font">Tail Number</div>
+    </div>
+    <div class="col-md-1 border-header">
+        <div class="header-font">Gate</div>
+    </div>
+    <div class="col-md-2 border-header">
+        <div class="header-font">Status</div>
+    </div>
+</div>
+<div *ngFor = "let flight of flights$ | async" class="flight row search-result search-result-display">
+    <div *ngFor = "let flightLeg of flight.FlightLeg; let i = index"  (click)="goToFlightDetailPage(flightLeg)" class="flight-leg">
+        <div class="connecting-hr" *ngIf = "i !== 0">
+            <span >CONNECTING FLIGHT</span>
+        </div>
+        <div class="col-lg-1 col-md-1 col-xl-1 ipad-view" [ngClass]="{'twoRows': flightLeg.status == 'Delayed' }">
+            <div class="display-font">
+                <div>{{flightLeg.STD || flightLeg.STDTime}}</div>
+                <ng-template [ngIf]="flightLeg.status === 'Delayed'">
+                    <div class="Delayed">{{flightLeg.depDescription}}</div>
+                </ng-template>
+            </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-xl-1 ipad-view">
+            <div class="display-font">{{flightLeg.flightNumber}}</div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-xl-5 ipad-view route">
+            <div class="col-lg-2 col-md-2 col-xl-2 display-font route-1">
+                <div> {{flightLeg.originCode}} </div>
+                <div class="state-ca"> {{flightLeg.originCity || flightLeg.originDisplayName}} </div>
+            </div>
+            <div class="route-arrow">
+                <img class="img" src="../../assets/arrow-right.svg">
+            </div>
+            <div class="col-lg-2 col-md-2 col-xl-2 display-font route-2">
+                <div> {{flightLeg.destinationCode}} </div>
+                <div class="state-ca"> {{flightLeg.destinationCity || flightLeg.destinationDisplayName}}</div>
+            </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-xl-1 ipad-view">
+            <div class="display-font">{{flightLeg.eqpmtType || flightLeg.equipmentType}}</div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-xl-1 ipad-view">
+            <div class="display-font">{{flightLeg.tailNumber}}</div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-xl-1 ipad-view">
+            <div class="display-font">{{flightLeg.depGate}}</div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 ipad-view" [ngClass]="flightLeg.flightStatus || flightLeg.status">
+            <div class="display-font">{{flightLeg.flightStatus || flightLeg.status}}</div>
+        </div>
+    </div>
+</div>
+</div>

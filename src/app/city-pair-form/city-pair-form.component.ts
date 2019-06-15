@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'city-pair-form',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./city-pair-form.component.scss']
 })
 export class CityPairFormComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor(
+    private router: Router ,
+
+  ) { }
 
   ngOnInit() {
+
   }
 
+  submitForm() {
+    this.router.navigate(['searchresults'])
+  }
 }
