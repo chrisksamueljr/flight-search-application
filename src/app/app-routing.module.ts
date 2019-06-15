@@ -8,11 +8,14 @@ export const routes: Routes = [
   {path: '', redirectTo: 'landing',  pathMatch: 'full'},
   {path: 'searchresults', component: SearchResultComponent},
   {path: 'landing', component: SearchFormComponent }
+
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes,
+      { enableTracing: true } // <-- debugging purposes only
+      )
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'},

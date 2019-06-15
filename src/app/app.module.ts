@@ -8,7 +8,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MenuNavigationComponent } from './menu-navigation/menu-navigation.component';
@@ -54,6 +54,7 @@ const MATERIAL_MODULES = [
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
   MATERIAL_MODULES,
 
   ],
