@@ -1,102 +1,104 @@
 .jb-Title-padding {
-    padding-bottom: 1.5em;
-    padding-top: 1em;
-  }
-  
-  .search-form {
-    position: relative;
-  }
-  
-  .find-it {
-    position: relative;
-    top: 40px;
-  }
-  
-  .jetblue-input-container {
-    width: 100%;
-  }
-  
-  .jb-datepicker {
-    width: 300px;
-  }
-  
-  .search-title {
-    font-size: 28px;
-    color: rgb(25, 73, 139);
-    text-align: left;
-  }
-  
-  .magnifying-glass-icon {
-    fill: rgb(0, 73, 144);
-    width: 2em;
-    height: 2em;
-  
-  }
-  
-  .be-hr {
-    border-bottom-right-radius: 1px solid #ccc;
-  }
-  
-  .top1 {
-    top: 10px;
-  }
-  
-  .top2 {
-    top: 15px;
-  }
-  
-  .searchContent {
-    background-color: #fff;
-    width: 325px;
-    height: 100%;
-    padding: 1px 10px 0;
-    display: inline-block;
-  }
-  
-  jb-datepicker {
-    width: 300px;
-    padding-top: 60px;
-  }
-  
-  .col-sm-10.input-group.search-button {
-    margin-top: 350px;
-    padding-top: 10px;
-    padding-bottom: 300px;
-  }
-  
-  
-  md-dialog-container.md-dialog-container {
-    margin-right: -394px;
-    position: static;
-    width: 301px;
-    height: 42px;
-  }
-  
-  .jb-input-padding {
-    margin-bottom: 5px;
-  }
-  
-  .searchby {
-    color: rgb(0, 73, 144);
-  }
-  
-  .searchContent1 {
-      padding-top: 1px;
-      background-color: #fff;
-      padding-bottom: 0;
-      width: 325px;
-      padding-left: 10px;
-      height: 100%
-  }
-  
-  .mat-select-trigger-1 {
-      color: black !important;
-      height: 50px !important;
-      padding-left: 10px;
-  }
-  
-  .orange-button {
-    background-color: orange;
-  
-  }
-  
+  padding-bottom: 1.5em;
+  padding-top: 1em;
+}
+
+.search-form {
+  position: relative;
+}
+
+.find-it {
+  position: relative;
+  top: 40px;
+}
+
+.jetblue-input-container {
+  width: 100%;
+}
+
+.jb-datepicker {
+  width: 300px;
+}
+
+.search-title {
+  font-size: 28px;
+  color: rgb(25, 73, 139);
+  text-align: left;
+}
+
+.magnifying-glass-icon {
+  fill: rgb(0, 73, 144);
+  width: 2em;
+  height: 2em;
+
+}
+
+.be-hr {
+  border-bottom-right-radius: 1px solid #ccc;
+}
+
+.top1 {
+  top: 10px;
+}
+
+.top2 {
+  top: 15px;
+}
+
+.searchContent {
+  background-color: #fff;
+  width: 325px;
+  height: 100%;
+  padding: 1px 10px 0;
+  display: inline-block;
+}
+
+jb-datepicker {
+  width: 300px;
+  padding-top: 60px;
+}
+
+.col-sm-10.input-group.search-button {
+  margin-top: 350px;
+  padding-top: 10px;
+  padding-bottom: 300px;
+}
+
+
+md-dialog-container.md-dialog-container {
+  margin-right: -394px;
+  position: static;
+  width: 301px;
+  height: 42px;
+}
+
+.jb-input-padding {
+  margin-bottom: 5px;
+}
+
+.searchby {
+  color: rgb(0, 73, 144);
+}
+
+.searchContent1 {
+  padding-top: 1px;
+  background-color: #fff;
+  padding-bottom: 0;
+  width: 325px;
+  padding-left: 10px;
+  height: 100%
+}
+
+.mat-select-trigger-1 {
+  color: black !important;
+  height: 50px !important;
+  padding-left: 10px;
+}
+
+.orange-button {
+  background-color: orange;
+}
+
+button {
+  width: 100%;
+}
