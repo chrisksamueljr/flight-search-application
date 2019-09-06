@@ -1,19 +1,53 @@
+<!-- <div class="searchContent"> -->
+<!-- <div class="col-sm-10 jb-Title-padding"> -->
+<!-- <ys-icon height="1.3em" width="1.3em" class="magnmifying-glass-icon" type="magnifying-glass"></ys-icon> -->
+<!-- <span class="search-title ">Let's Search</span> -->
+<!-- </div> -->
+<!-- <mat-select class="md-select-trigger" placeholder="Search Option"> -->
+<!-- <mat-option class="md-select-trigger" *ngFor="let options of searchby" [value]="options.code">{{ options.name }}</mat-option> -->
+<!-- <mat-option>Name</mat-option> -->
+<!-- </mat-select> -->
+<!-- <br> -->
+
+<!-- <div class="search-form"> -->
+<!-- <div class="search-form" *ngIf="(default === 'OD')" > -->
+<!-- <ys-city-pair-form (isCollapsedEvent)="toggleAnimation($event)"></ys-city-pair-form> -->
+<!-- <city-pair-form></city-pair-form> -->
+<!-- </div> -->
+<!-- </div> -->
+
+
 <div class="searchContent">
   <div class="col-sm-10 jb-Title-padding">
-    <!-- <ys-icon height="1.3em" width="1.3em" class="magnmifying-glass-icon" type="magnifying-glass"></ys-icon> -->
     <span class="search-title ">Let's Search</span>
   </div>
-  <mat-select class="md-select-trigger" placeholder="Search Option">
-        <!-- <mat-option class="md-select-trigger" *ngFor="let options of searchby" [value]="options.code">{{ options.name }}</mat-option> -->
-    <mat-option>Name</mat-option>
+
+  <form [formGroup]="searchForm" (ngSubmit)="search()">
+    <mat-form-field>
+      <mat-label>Search Option</mat-label>
+      <mat-select formControlName="searchOption">
+        <mat-option *ngFor="let option of searchOptionsArray" [value]="option">
+          {{option}}
+        </mat-option>
       </mat-select>
-  <br>
+    </mat-form-field>
 
-  <div class="search-form">
-      <!-- <div class="search-form" *ngIf="(default === 'OD')" > -->
-    <!-- <ys-city-pair-form (isCollapsedEvent)="toggleAnimation($event)"></ys-city-pair-form> -->
-    <city-pair-form></city-pair-form>
-    </div>
-    
+    <mat-form-field>
+      <input formControlName="origin" matInput placeholder="Origin">
+    </mat-form-field>
+    <mat-form-field>
+      <input formControlName="destination" matInput placeholder="Destination">
+    </mat-form-field>
 
+    <mat-form-field>
+      <input formControlName="date" matInput [matDatepicker]="picker" placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-checkbox formControlName="timeCheck" color="accent">Display all times in ZULU (UTC)</mat-checkbox>
+    <br />
+    <br />
+    <button type="submit" mat-raised-button color="accent" [disabled]="searchForm.invalid">Find It</button>
+  </form>
 </div>
